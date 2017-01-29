@@ -1,0 +1,308 @@
+* {
+	box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+	background-image: url("../images/geometry2.png");
+	font-size: 18px;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+	background: #fff;
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/* TOP OF THE PAGE */ 
+
+.top-div {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.top-div h1 {
+	color: #fff;
+	background: #008080;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin: 0;
+	height: 80px;
+	padding-top: 22px;
+}
+
+.intro-div h2::first-letter {
+	text-transform: capitalize;
+}
+
+.intro-div h2 {
+	font-size: 1.3rem;
+	width: 90%;
+	color: #008080;
+	margin: 30px auto 0;
+}
+
+.intro-div p::first-letter {
+	text-transform: capitalize;
+}
+
+.intro-div p {
+	display: inline-block;
+	font-size: 0.9rem;
+	width: 90%;
+	margin-bottom: 30px;
+	opacity: .4;
+}
+
+.intro-div {
+	border-bottom: 4px solid #008080;
+	margin-bottom: 5px;
+}
+
+/* FORM ELEMENT */ 
+
+.form-div {
+	margin-left: 0;
+	text-align: left;
+	border-top: 2px solid #008080;
+}
+
+.fieldset {
+	border: none;
+	border-bottom: 2px solid #008080;
+}
+
+.legend {
+	color: #008080;
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-transform: capitalize;
+	padding-top: 25px;
+	padding-bottom: 0;
+}
+
+label {
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	font-size: 0.9rem;
+	color: #008080;
+	opacity: .9;
+	text-transform: capitalize;
+}
+
+input {
+	width: 100%;
+	text-transform: capitalize;
+	font-style: italic;
+	font-size: 0.8rem;
+	border-radius: 5px;
+	height: 40px;
+	background-color: #f0f0f5;
+	border: none;
+}
+
+::-webkit-input-placeholder {
+	text-align: right;
+	padding-right: 20px;
+}
+
+
+
+input[type="tel"] {
+	text-transform: none;
+}
+
+#state {
+	width: 100%;
+	text-transform: capitalize;
+	font-style: italic;
+	font-size: 0.8rem;
+	border-radius: 5px;
+	height: 40px;
+	background-color: #f0f0f5;
+	border: none;
+	opacity: .7;
+}
+
+
+#zipcode {
+	display: block;
+	width: 40%;
+	text-transform: none;
+}
+
+.fieldset p {
+	color: #008080;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	display: inline-block;
+	width: 13px;
+}
+
+label[for*="news"], label[for*="format"], label[for*="UX"], label[for*=
+"marketing"] {
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 5px;
+}
+
+label[for="topics"] {
+	text-transform: none;
+}
+
+#topics, #comment {
+	width: 100%;
+	text-transform: none;
+	font-style: italic;
+	font-size: 0.8rem;
+	border-radius: 5px;
+	height: 100px;
+	background-color: #f0f0f5;
+	border: none;
+}
+
+
+label[for="comment"] {
+	text-transform: none;
+}
+
+#third-fieldset {
+	border-bottom: none;
+}
+
+.btn-div {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.btn {
+	background: #47d1d1;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	width: 100%;
+	height: 60px;
+	cursor: pointer;
+}
+
+/* FOOTER */ 
+
+.footer-div {
+	color: #85adad;
+	padding-bottom: 140px;
+}
+
+/* ADDITIONAL STYLING */ 
+
+input:focus {
+	border: #008080;
+	color: #00cc99;
+	border-radius: 2px;
+	background: #fff;
+	transition: all .5s;
+}
+
+input[type="checkbox"]:checked + label {
+	color: #00804d;
+	font-weight: bold;
+	border-bottom: 1px solid;
+}
+
+input[type="radio"]:checked + label {
+	color: #00804d;
+	font-weight: bold;
+	border-bottom: 1px solid;
+}
+
+/* MEDIA QUERIES: TABLETS */ 
+
+@media (min-width: 760px) {
+	.container {
+		width: 70%;
+		font-size: 1.3rem;
+	}
+
+	.intro-div p {
+		font-size: 1.3rem;
+	}
+ 
+  	.intro-div h2 {
+  		font-size: 1.5rem;
+  	}
+
+  	input {
+		display: inline-block;
+		width: 60%;
+		float: right;
+		margin-top: 10px;
+	}
+
+	input[type="checkbox"], input[type="radio"] {
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 6px;
+		padding-bottom: 5px;
+	}	
+
+	label[for*="news"], label[for*="format"], label[for*="UX"], label[for*=
+	"marketing"] {
+		display: inline-block;
+		padding: 17px 0 0 0;
+		margin-left: 8px;
+	}
+
+
+	#state {
+		width: 60%;
+		float: right;
+		margin-top: 10px;
+	}
+
+  	form label {
+  		font-size: 1.1em;
+  	}
+
+  	.btn {
+  		width: 95%;
+  	}
+
+
+  ::-webkit-input-placeholder {
+	text-align: right;
+	padding-right: 10px;
+	font-size: 0.9rem;
+}
+
+}
+
+
+/* MEDIA QUERIES: DESKTOP */
+
+@media (min-width: 1040px) {
+	.container {
+		width: 60%;
+		max-width: 800px;
+	}
+
+	#zipcode {
+		width: 30%;
+	}
+
+	input[type="checkbox"], input[type="radio"] {
+		float: none;
+	}
+
+} 
+
